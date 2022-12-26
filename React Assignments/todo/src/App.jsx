@@ -3,14 +3,6 @@ import { useState } from 'react'
 import './App.css'
 
 
-function DeleteTask(){
-
-
-}
-
-function Edit(){
-  
-}
 
 function AddTask(){
   const [task, setTask] = useState([]);
@@ -21,6 +13,14 @@ function AddTask(){
       setText("")
   }
 
+const onDeleteTask = (id) =>{
+      const updatedItems = task.filter((elem, index) => {
+           return index === id;
+      }) 
+
+      setTask(updatedItems);
+}
+
   return(
       <div>
            
@@ -28,12 +28,12 @@ function AddTask(){
            <input type="text" value={text} onChange={(e) => setText(e.target.value)}/>
            <button onClick={onAddTask}>Add</button>
            <button onClick={onAddTask}>Edit</button>
-           <button onClick={onAddTask}>Delete</button>
+           <button onClick={() => onDeleteTask(index)}>Delete</button>
 
 
            <ul>
-               {task.map((a) => (
-                   <li key={a}>{a}</li>
+               {task.map((elem, index) => (
+                   <li key={index}>{elem}</li>
                ))}
 
            </ul>
