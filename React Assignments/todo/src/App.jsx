@@ -13,9 +13,16 @@ function AddTask(){
       setText("")
   }
 
+const EditTask = () => {
+
+}
+
+
 const onDeleteTask = (id) =>{
       const updatedItems = task.filter((elem, index) => {
-           return index === id;
+                  
+        return index !== id;
+        
       }) 
 
       setTask(updatedItems);
@@ -27,14 +34,20 @@ const onDeleteTask = (id) =>{
 
            <input type="text" value={text} onChange={(e) => setText(e.target.value)}/>
            <button onClick={onAddTask}>Add</button>
-           <button onClick={onAddTask}>Edit</button>
-           <button onClick={() => onDeleteTask(index)}>Delete</button>
+           {/* <button onClick={onAddTask}>Edit</button> */}
+          
 
 
            <ul>
                {task.map((elem, index) => (
-                   <li key={index}>{elem}</li>
+                  <div key={index}>
+                 
+                       <li>{elem}</li>
+                       
+                       <button onClick={() => onDeleteTask(index)}>Delete</button>
+                       </div>
                ))}
+              
 
            </ul>
 
@@ -53,6 +66,7 @@ function App() {
     <>
        <h1>CURD App</h1>
        <AddTask />
+       
     </>
   )
 }
