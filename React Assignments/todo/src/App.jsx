@@ -9,6 +9,10 @@ function AddTask(){
   const [text, setText] = useState("");
 
   const onAddTask = () => {
+    if(text === ""){
+         alert("Enter Any Task")
+         return
+    }
       setTask([...task, text])
       setText("")
   }
