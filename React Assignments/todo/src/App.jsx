@@ -18,18 +18,20 @@ function AddTask(){
   }
 
 const EditTask = () => {
-
+      const editItems = task.find((elem, index) => {
+           return setText(text);
+      })
 }
 
 
 const onDeleteTask = (id) =>{
-      const updatedItems = task.filter((elem, index) => {
+      const removedItems = task.filter((elem, index) => {
                   
         return index !== id;
         
       }) 
 
-      setTask(updatedItems);
+      setTask(removedItems);
 }
 
   return(
