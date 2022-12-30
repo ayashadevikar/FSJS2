@@ -7,6 +7,7 @@ import './App.css'
 function AddTask(){
   const [task, setTask] = useState([]);
   const [text, setText] = useState("");
+  const [edit, setEdit] = useState(false);
 
   const onAddTask = () => {
     if(text === ""){
@@ -40,6 +41,7 @@ const onDeleteTask = (id) =>{
 
            <input type="text" value={text} onChange={(e) => setText(e.target.value)}/>
            <button onClick={onAddTask}>Add</button>
+           edit? Update : Add
            {/* <button onClick={onAddTask}>Edit</button> */}
           
 
