@@ -41,7 +41,7 @@ const onDeleteTask = (id) =>{
 
            <input type="text" value={text} onChange={(e) => setText(e.target.value)}/>
            <button onClick={onAddTask}>Add</button>
-           edit? Update : Add
+         
            {/* <button onClick={onAddTask}>Edit</button> */}
           
 
@@ -53,6 +53,7 @@ const onDeleteTask = (id) =>{
                        <li>{elem}</li>
                        
                        <button onClick={() => onDeleteTask(index)}>Delete</button>
+                      
                        </div>
                ))}
               
