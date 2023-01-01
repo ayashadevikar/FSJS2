@@ -12,7 +12,7 @@ function AddTask(){
   const onAddTask = () => {
     if(text === ""){
          alert("Enter Any Task")
-         return
+         return;
     }
       setTask([...task, text])
       setText("")
@@ -42,7 +42,7 @@ const onDeleteTask = (id) =>{
            <input type="text" value={text} onChange={(e) => setText(e.target.value)}/>
            <button onClick={onAddTask}>Add</button>
          
-           {/* <button onClick={onAddTask}>Edit</button> */}
+           
           
 
 
@@ -51,6 +51,8 @@ const onDeleteTask = (id) =>{
                   <div key={index}>
                  
                        <li>{elem}</li>
+                       
+                       <button onClick={onAddTask(index)}>Edit</button>
                        
                        <button onClick={() => onDeleteTask(index)}>Delete</button>
                       
