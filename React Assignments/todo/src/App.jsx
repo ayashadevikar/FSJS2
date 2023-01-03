@@ -22,6 +22,9 @@ const EditTask = (id) => {
       const editItems = task.find((elem) => {
            return elem.id === id
       })
+
+      setTask(editItems);
+      setEdit(false);
       
 }
 
@@ -43,7 +46,7 @@ const onDeleteTask = (id) =>{
            <input type="text" value={text} onChange={(e) => setText(e.target.value)}/>
           
           {
-            edit ? <button onClick={onAddTask}>Add</button> : 
+            edit ? <button onClick={EditTask}>Update</button> : <button onClick={onAddTask}>Add</button>
           }
            
          
