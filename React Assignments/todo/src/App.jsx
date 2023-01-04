@@ -7,7 +7,7 @@ import './App.css'
 function AddTask(){
   const [task, setTask] = useState([]);
   const [text, setText] = useState("");
-  const [edit, setEdit] = useState(true);
+  const [edit, setEdit] = useState(false);
 
   const onAddTask = () => {
     if(text === ""){
@@ -24,7 +24,7 @@ const EditTask = (id) => {
       })
 
       setTask(editItems);
-      setEdit(false);
+      // setEdit(true);
       
 }
 
@@ -46,7 +46,7 @@ const onDeleteTask = (id) =>{
            <input type="text" value={text} onChange={(e) => setText(e.target.value)}/>
           
           {
-            edit ? <button onClick={EditTask}>Update</button> : <button onClick={onAddTask}>Add</button>
+            edit ? <button>Update</button> : <button onClick={onAddTask}>Add</button>
           }
            
          
