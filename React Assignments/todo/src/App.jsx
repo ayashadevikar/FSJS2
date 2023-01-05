@@ -24,7 +24,8 @@ const EditTask = (id) => {
       })
 
       setTask(editItems);
-      // setEdit(true);
+      setEdit(true);
+      setText(editItems.name);
       
 }
 
