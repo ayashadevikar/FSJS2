@@ -7,7 +7,7 @@ import './App.css'
 function AddTask(){
   const [task, setTask] = useState([]);
   const [text, setText] = useState("");
-  const [editbtn, setEditBtn] = useState(false);
+  // const [editbtn, setEditBtn] = useState(false);
   const [edit, setEdit] = useState("null")
 
   const onAddTask = () => {
@@ -22,13 +22,11 @@ function AddTask(){
 const EditTask = (id) => {
       const editItems = task.find((elem) => {
            return elem.id === id
+        
       })
-
-      setTask(editItems);
-      setEditBtn(true);
-      setText(editItems.id);
-      setEdit(id);
-      
+           
+      console.log(editItems);
+      setEdit(text);
 }
 
 
@@ -57,7 +55,7 @@ const onDeleteTask = (id) =>{
 
 
            <ul>
-               {task.map((elem, index) => (
+               {task.map((elem,index) => (
                   <div key={index}>
                  
                        <li>{elem}</li>
@@ -65,7 +63,7 @@ const onDeleteTask = (id) =>{
 
            
 
-                       <button onClick={EditTask(id)}>Edit</button>
+                       <button onClick={() => EditTask(index)}>Edit</button>
                        
                        <button onClick={() => onDeleteTask(index)}>Delete</button>
                       
