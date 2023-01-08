@@ -10,7 +10,8 @@ function AddTask(){
   // const [editbtn, setEditBtn] = useState(false);
   const [edit, setEdit] = useState("null")
 
-  const onAddTask = () => {
+  const onAddTask = (e) => {
+    e.preventDefault();
     if(text === ""){
          alert("Enter Any Task")
          return;
@@ -21,12 +22,12 @@ function AddTask(){
 
 const EditTask = (id) => {
       const editItems = task.find((elem) => {
-           return elem.id === id
+        return elem.id === id;
+       
+          
         
       })
-           
-      console.log(editItems);
-      setEdit(text);
+     
 }
 
 
@@ -56,14 +57,14 @@ const onDeleteTask = (id) =>{
 
            <ul>
                {task.map((elem,index) => (
-                  <div key={index}>
+                  <div key={elem}>
                  
                        <li>{elem}</li>
                        
 
            
 
-                       <button onClick={() => EditTask(index)}>Edit</button>
+                       <button onClick={() => EditTask(elem)}>Edit</button>
                        
                        <button onClick={() => onDeleteTask(index)}>Delete</button>
                       
