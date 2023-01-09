@@ -8,7 +8,7 @@ function AddTask(){
   const [task, setTask] = useState([]);
   const [text, setText] = useState("");
   // const [editbtn, setEditBtn] = useState(false);
-  const [edit, setEdit] = useState("null")
+  // const [edit, setEdit] = useState("null")
 
   const onAddTask = (e) => {
     e.preventDefault();
