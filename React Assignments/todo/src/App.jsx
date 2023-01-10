@@ -4,42 +4,67 @@ import './App.css'
 
 
 
-function AddTask(){
+function ToDoList(){
   const [task, setTask] = useState([]);
   const [text, setText] = useState("");
-  // const [editbtn, setEditBtn] = useState(false);
+ const [editbtn, setEditBtn] = useState(false);
+
+ const [valueToBeReplaced, setvalueToBeReplaced] = useState("");
+
   // const [edit, setEdit] = useState("null")
 
   const onAddTask = (e) => {
     e.preventDefault();
-    if(text === ""){
-         alert("Enter Any Task")
-         return;
+    
+    if(editbtn){
+
+        updatevalue(valueToBeReplaced);
+        setText("")
+        setEditBtn(false)
+
+        
+
     }
-      setTask([...task, text])
-      setText("")
+    else{
+      if(text === ""){
+        alert("Enter Any Task")
+        return;
+   }
+     setTask([...task, text])
+     setText("")
+    }
+    
   }
 
-const EditTask = (id) => {
-      const editItems = task.find((elem) => {
-        return elem.id === id;
-       
-          
-        
-      })
-     
+  const updatevalue = (valueSentByAddButton) => {
+    debugger
+    const indexValuetoreplace=task.indexOf(valueSentByAddButton);
+    task.splice(indexValuetoreplace,1,text);
+    
+  }
+
+const EditTask = (elementSentByHTML) => {
+  debugger
+  const valuetoFind=task.find(element => element === elementSentByHTML)
+      if(valuetoFind==elementSentByHTML)
+      {
+        setText(elementSentByHTML);
+        setvalueToBeReplaced(elementSentByHTML);
+      }
+     setEditBtn(true);
 }
 
 
-const onDeleteTask = (id) =>{
-      const removedItems = task.filter((elem, index) => {
-                  
-        return index !== id;
-        
-      }) 
-
-      setTask(removedItems);
-}
+// const onDeleteTask = (elementSentByHTML) =>{
+//   console.log(task)
+//   const valuetoDelete=task.find(element => element === elementSentByHTML)
+//   if(valuetoDelete==elementSentByHTML)
+//   {
+//     const indexD=task.indexOf(valuetoDelete)
+//     task.splice(indexD,1)
+    
+//   }
+// }
 
   return(
       <div>
@@ -47,7 +72,8 @@ const onDeleteTask = (id) =>{
 
            <input type="text" value={text} onChange={(e) => setText(e.target.value)}/>
            
-            <button onClick={onAddTask}>Add</button>
+            { 
+            editbtn? <button onClick={onAddTask}>Update</button> : <button onClick={onAddTask}>Add</button>}
           
           
          
@@ -66,7 +92,7 @@ const onDeleteTask = (id) =>{
 
                        <button onClick={() => EditTask(elem)}>Edit</button>
                        
-                       <button onClick={() => onDeleteTask(index)}>Delete</button>
+                       <button onClick={() => onDeleteTask(elem)}>Delete</button>
                       
                        </div>
                ))}
@@ -87,8 +113,8 @@ function App() {
 
   return (
     <>
-       <h1>CURD App</h1>
-       <AddTask />
+       <h1>CRUD App</h1>
+       <ToDoList />
        
     </>
   )
