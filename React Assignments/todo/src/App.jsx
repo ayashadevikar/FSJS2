@@ -43,16 +43,16 @@ function ToDoList(){
     
   }
 
-const EditTask = (elementSentByHTML) => {
-  debugger
-  const valuetoFind=task.find(element => element === elementSentByHTML)
-      if(valuetoFind==elementSentByHTML)
-      {
-        setText(elementSentByHTML);
-        setvalueToBeReplaced(elementSentByHTML);
-      }
-     setEditBtn(true);
-}
+// const EditTask = (elementSentByHTML) => {
+//   debugger
+//   const valuetoFind=task.find(element => element === elementSentByHTML)
+//       if(valuetoFind==elementSentByHTML)
+//       {
+//         setText(elementSentByHTML);
+//         setvalueToBeReplaced(elementSentByHTML);
+//       }
+//      setEditBtn(true);
+// }
 
 
 // const onDeleteTask = (elementSentByHTML) =>{
