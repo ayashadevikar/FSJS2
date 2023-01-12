@@ -36,12 +36,12 @@ function ToDoList(){
     
   }
 
-  const updatevalue = (valueSentByAddButton) => {
-    debugger
-    const indexValuetoreplace=task.indexOf(valueSentByAddButton);
-    task.splice(indexValuetoreplace,1,text);
+  // const updatevalue = (valueSentByAddButton) => {
+  //   debugger
+  //   const indexValuetoreplace=task.indexOf(valueSentByAddButton);
+  //   task.splice(indexValuetoreplace,1,text);
     
-  }
+  // }
 
 // const EditTask = (elementSentByHTML) => {
 //   debugger
