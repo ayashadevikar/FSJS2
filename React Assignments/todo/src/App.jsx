@@ -18,9 +18,9 @@ function ToDoList(){
     
     if(editbtn){
 
-        updatevalue(valueToBeReplaced);
-        setText("")
-        setEditBtn(false)
+        // updatevalue(valueToBeReplaced);
+        // setText("")
+        // setEditBtn(false)
 
         
 
