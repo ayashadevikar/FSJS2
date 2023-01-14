@@ -54,6 +54,14 @@ function ToDoList(){
 //      setEditBtn(true);
 // }
 
+const EditTask = (id) => {
+        const editItem = task.find((elem) => {
+          return elem === id
+        }) 
+              
+        setText(editItem)
+}
+
 
 // const onDeleteTask = (elementSentByHTML) =>{
 //   console.log(task)
