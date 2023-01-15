@@ -60,6 +60,7 @@ const EditTask = (id) => {
         }) 
               
         setText(editItem)
+        setEditBtn(true);
 }
 
 
