@@ -21,8 +21,9 @@ function ToDoList(){
         // updatevalue(valueToBeReplaced);
         // setText("")
         // setEditBtn(false)
-
-        
+        updateItem(valueToBeReplaced)
+        setText("")
+        setEditBtn(false)
 
     }
     else{
@@ -43,6 +44,13 @@ function ToDoList(){
     
   // }
 
+
+  const updateItem = (valueSentByAddButton) => {
+       const newItem = task.indexOf(valueSentByAddButton)
+       task.splice(newItem, 1 , text)
+       
+  }
+
 // const EditTask = (elementSentByHTML) => {
 //   debugger
 //   const valuetoFind=task.find(element => element === elementSentByHTML)
@@ -57,23 +65,39 @@ function ToDoList(){
 const EditTask = (id) => {
         const editItem = task.find((elem) => {
           return elem === id
+       
         }) 
               
         setText(editItem)
         setEditBtn(true);
+        setvalueToBeReplaced(id)
 }
 
 
-// const onDeleteTask = (elementSentByHTML) =>{
-//   console.log(task)
-//   const valuetoDelete=task.find(element => element === elementSentByHTML)
-//   if(valuetoDelete==elementSentByHTML)
-//   {
-//     const indexD=task.indexOf(valuetoDelete)
-//     task.splice(indexD,1)
+const onDeleteTask = (elementSentByHTML) =>{
+  console.log(task)
+  const valuetoDelete=task.find(element => element === elementSentByHTML)
+  if(valuetoDelete==elementSentByHTML)
+  {
+    const indexD=task.indexOf(valuetoDelete)
+    task.splice(indexD,1)
     
-//   }
-// }
+  }
+}
+
+
+
+
+// const onDeleteTask = (elem) => {
+//     const deleteItem = task.find((id) => {
+//         return elem === id
+       
+
+//     })   
+//     const item = task.indexOf(deleteItem)
+//     task.splice(item,1)
+   
+// } 
 
   return(
       <div>
