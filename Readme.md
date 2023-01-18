@@ -49,3 +49,7 @@
 ## Html Practice
 [Heading](./Html%20Practice/headings.html)
 
+[Paragraph](./Html%20Practice/paragraph.html)
+
+[Table](./Html%20Practice/table.html)
+
