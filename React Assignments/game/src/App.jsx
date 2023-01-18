@@ -9,10 +9,13 @@ function App() {
   const [computerChoice, setcomputerChoice] = useState("Rock,Paper,Scissor")
 
 
-  //  if(userChoice === computerChoice){
-  //        alert("Game Draw")
-  //        return;
-  //  }
+  const condition = () => {
+      if(userChoice === computerChoice){
+         alert("Game Draw")
+         return;
+     }
+  }
+  
 
   const Choices = Math.floor(Math.random()*3)
 
@@ -20,9 +23,9 @@ function App() {
   return (
      <>
         <h1>Rock Scissor Paper Game</h1>
-        <button>Rock</button>
-        <button>Scissor</button>
-        <button>Paper</button>
+        <button onClick={condition}>Rock</button>
+        <button onClick={condition}>Scissor</button>
+        <button onClick={condition}>Paper</button>
         
       </>
   )
