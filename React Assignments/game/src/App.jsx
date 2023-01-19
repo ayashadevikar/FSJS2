@@ -11,13 +11,14 @@ function App() {
 
   const condition = () => {
       if(userChoice === computerChoice){
+        const Choices = Math.floor(Math.random()*3)
          alert("Game Draw")
          return;
      }
   }
   
 
-  const Choices = Math.floor(Math.random()*3)
+  
 
 
   return (
