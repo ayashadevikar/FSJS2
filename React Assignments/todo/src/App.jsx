@@ -18,12 +18,11 @@ function ToDoList(){
     
     if(editbtn){
 
-        // updatevalue(valueToBeReplaced);
-        // setText("")
-        // setEditBtn(false)
-        updateItem(valueToBeReplaced)
+        updatevalue(valueToBeReplaced);
         setText("")
         setEditBtn(false)
+        // updateItem(valueToBeReplaced)
+        
 
     }
     else{
@@ -37,50 +36,51 @@ function ToDoList(){
     
   }
 
-  // const updatevalue = (valueSentByAddButton) => {
-  //   debugger
-  //   const indexValuetoreplace=task.indexOf(valueSentByAddButton);
-  //   task.splice(indexValuetoreplace,1,text);
+  const updatevalue = (valueSentByAddButton) => {
+    debugger
+    const indexValuetoreplace=task.indexOf(valueSentByAddButton);
+    task.splice(indexValuetoreplace,1,text);
     
-  // }
-
-
-  const updateItem = (valueSentByAddButton) => {
-       const newItem = task.indexOf(valueSentByAddButton)
-       task.splice(newItem, 1 , text)
-       
   }
 
-// const EditTask = (elementSentByHTML) => {
-//   debugger
-//   const valuetoFind=task.find(element => element === elementSentByHTML)
-//       if(valuetoFind==elementSentByHTML)
-//       {
-//         setText(elementSentByHTML);
-//         setvalueToBeReplaced(elementSentByHTML);
-//       }
-//      setEditBtn(true);
-// }
 
-const EditTask = (id) => {
-        const editItem = task.find((elem) => {
-          return elem === id
+  // const updateItem = (valueSentByAddButton) => {
+  //      const newItem = task.indexOf(valueSentByAddButton)
+  //      task.splice(newItem, 1 , text)
        
-        }) 
-              
-        setText(editItem)
-        setEditBtn(true);
-        setvalueToBeReplaced(id)
+  // }
+
+const EditTask = (elementSentByHTML) => {
+  debugger
+  const valuetoFind=task.find(element => element === elementSentByHTML)
+      if(valuetoFind==elementSentByHTML)
+      {
+        setText(elementSentByHTML);
+        setvalueToBeReplaced(elementSentByHTML);
+      }
+     setEditBtn(true);
 }
+
+// const EditTask = (id) => {
+//         const editItem = task.find((elem) => {
+//           return elem === id
+       
+//         }) 
+              
+//         setText(editItem)
+//         setEditBtn(true);
+//         setvalueToBeReplaced(id)
+// }
 
 
 const onDeleteTask = (elementSentByHTML) =>{
   console.log(task)
   const valuetoDelete=task.find(element => element === elementSentByHTML)
-  if(valuetoDelete==elementSentByHTML)
+  if(valuetoDelete == elementSentByHTML)
   {
-    const indexD=task.indexOf(valuetoDelete)
+    const indexD = task.indexOf(valuetoDelete)
     task.splice(indexD,1)
+    setTask([...task])
     
   }
 }
@@ -88,16 +88,7 @@ const onDeleteTask = (elementSentByHTML) =>{
 
 
 
-// const onDeleteTask = (elem) => {
-//     const deleteItem = task.find((id) => {
-//         return elem === id
-       
 
-//     })   
-//     const item = task.indexOf(deleteItem)
-//     task.splice(item,1)
-   
-// } 
 
   return(
       <div>
