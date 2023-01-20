@@ -1,0 +1,14 @@
+.container {
+    display: flex;
+    border: 2px solid black;
+    width: 1000px; 
+    
+}
+
+.container div {
+    flex-grow: 0;
+}
+
+.container div:nth-child(2){
+    flex-grow: 3;
+}

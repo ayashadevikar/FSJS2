@@ -45,10 +45,4 @@
 
 [Visual Studio Clone](https://visual-studio-clone-tailwind.netlify.app/)
 
-## Html Practice
-[Heading](./Html%20Practice/headings.html)
-
-[Paragraph](./Html%20Practice/paragraph.html)
-
-[Table](./Html%20Practice/table.html)
 
