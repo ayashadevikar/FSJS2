@@ -1,3 +1,5 @@
-# Work of Project 9
+# Replicate the Following Output
 
-The assets are provided and the output image is given to make a clone of the image. In this Project I write html file first and then I write css file. To build this Project I use Flexbox,Grid and Positions,Linear-gradient etc Css Properties are used to make this Project.
+`Assests are Provided!`
+
+![Project 9](./Gaming%20Landing%20Page.png)
