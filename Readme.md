@@ -33,13 +33,13 @@
 
 [Project 8- Hosting Landing Page](https://hosting-project2.netlify.app/)
 
-[Project 9- Game Landing Page](./HTML%20and%20CSS%20Projects/Project%209-%20Game%20Landing%20Page/readme.md)
+[Project 9- Game Landing Page](https://game-project3.netlify.app/)
 
 [Project 10- Real Estate Landing Page](https://real-estate-project4.netlify.app/)
 
-[Project 11- Main Landing Page](./HTML%20and%20CSS%20Projects/Project%2011-Beats%20Main%20Landing%20Page/)
+[Project 11- Main Landing Page](https://beats-project5.netlify.app/)
 
-[Project 12- Data Analytics Landing Page](./HTML%20and%20CSS%20Projects/Project%2012-%20Data%20Analytics%20Landing%20Page/)
+[Project 12- Data Analytics Landing Page](https://data-analytics-project6.netlify.app/)
 
 ## Tailwind Projects
 
