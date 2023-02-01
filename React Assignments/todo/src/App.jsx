@@ -5,6 +5,10 @@ import './App.css'
 
 function DeleteTask(){
 
+
+}
+
+function Edit(){
   
 }
 
