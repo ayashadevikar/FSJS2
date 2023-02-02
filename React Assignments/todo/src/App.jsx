@@ -2,6 +2,12 @@ import { useState } from 'react'
 
 import './App.css'
 
+
+function DeleteTask(){
+
+  
+}
+
 function AddTask(){
   const [task, setTask] = useState([]);
   const [text, setText] = useState("");
