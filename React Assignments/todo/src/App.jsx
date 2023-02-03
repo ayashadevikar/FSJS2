@@ -17,6 +17,7 @@ function AddTask(){
 
            <input type="text" value={text} onChange={(e) => setText(e.target.value)}/>
            <button onClick={onAddTask}>Add</button>
+           <button onClick={onAddTask}>Edit</button>
            <button onClick={onAddTask}>Delete</button>
 
 
