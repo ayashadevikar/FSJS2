@@ -45,4 +45,6 @@
 
 [Visual Studio Clone](https://visual-studio-clone-tailwind.netlify.app/)
 
+## JavaScript Assignment Question and Answers
 
+[JavaScript Assignment Question and Answers](./JavaScript%20Assignment)
