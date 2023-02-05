@@ -2,14 +2,45 @@ import { useState } from 'react'
 
 import './App.css'
 
+function AddTask(){
+  const [task, setTask] = useState([]);
+  const [text, setText] = useState("");
+
+  const onAddTask = () => {
+      setTask([...task, text])
+      setText("")
+  }
+
+  return(
+      <div>
+           
+
+           <input type="text" value={text} onChange={(e) => setText(e.target.value)}/>
+           <button onClick={onAddTask}>Add</button>
+
+
+           <ul>
+               {task.map((a) => (
+                   <li key={a}>{a}</li>
+               ))}
+
+           </ul>
+
+      </div>
+  
+  )
+
+
+}
+
 function App() {
  
-  count [add, setAdd] = useState([])
-  count [name, setName] = useState("")
+  
 
   return (
     <>
        <h1>CURD App</h1>
+       <AddTask />
     </>
   )
 }
