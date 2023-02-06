@@ -49,3 +49,5 @@
 
 [JavaScript Assignment Question and Answers](./JavaScript%20Assignment)
 
+## JavaScript Dom Assignments
+[Assignment 1- Create circles on webpage](./JavaScript%20DOM%20Assignments/Project%201-%20Create%20Circles%20on%20whole%20Webpage/)
