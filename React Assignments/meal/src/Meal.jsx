@@ -4,7 +4,7 @@ function Meal({text}){
    return (
 
        <>
-         <h1>{text.strCategory}</h1>
+         <h1>{text.strMeal}</h1>
          <img src={text.strMealThumb} alt="" />
        </>
    )

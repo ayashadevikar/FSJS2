@@ -17,15 +17,16 @@ function App() {
    }
 
 
-        const {data} = await Axios.get(`www.themealdb.com/api/json/v1/1/search.php?s=${search}`)
+        const {data} = await Axios.get(`https://www.themealdb.com/api/json/v1/1/search.php?s=${search}`)
         console.log("Response", data)
 
-        const text = data.meals
+        const text = data.meals[0]
         setText(text)
     }
 
+
     useEffect( ()=> {
-      fetch(`www.themealdb.com/api/json/v1/1/search.php?s=${search}`)
+      fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=`)
   }, [search])
 
   return (
