@@ -1,7 +1,7 @@
 import { useEffect,useState } from 'react'
 
 import './App.css'
-import Movie from './Meal.jsx'
+import Meal from './Meal.jsx'
 import Axios from 'axios'
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
     const [text, setText] = useState([]);
     const [search, setSearch] = useState("");
 
-    const fetechMovies = async () => {
+    const fetechMeals = async () => {
         
       if(search === ""){
         alert("Enter any Meal Name")
@@ -17,23 +17,23 @@ function App() {
    }
 
 
-        const {data} = await Axios.get(`www.themealdb.com/api/json/v1/1/search.php?s=${text}`)
+        const {data} = await Axios.get(`www.themealdb.com/api/json/v1/1/search.php?s=${search}`)
         console.log("Response", data)
 
-        const text = data
+        const text = data.meals
         setText(text)
     }
 
     useEffect( ()=> {
-      fetch(`www.themealdb.com/api/json/v1/1/search.php?s=${text}`)
+      fetch(`www.themealdb.com/api/json/v1/1/search.php?s=${search}`)
   }, [search])
 
   return (
      <>
-       <h1>Movie App</h1>
-       <input type="text" value={text} placeholder='Enter any Meal Name' onChange={(e) => setSearch(e.target.value)}/>
-       <button onClick={fetechMovies}>Search</button>
-       <Movie text={text}/>
+       <h1>Meal App</h1>
+       <input type="text" value={search} placeholder='Enter any Meal Name' onChange={(e) => setSearch(e.target.value)}/>
+       <button onClick={fetechMeals}>Search</button>
+       <Meal text={text}/>
      </>
   )
 }
