@@ -1,5 +1,5 @@
 
-
+import { useEffect,useState } from 'react';
 import './App.css'
 import Movie from './Movie.jsx'
 import Axios from 'axios'
@@ -20,18 +20,18 @@ function App() {
         const {data} = await Axios.get(`https://www.omdbapi.com/?s=${search}&apikey=f195b326`)
         console.log("Response", data)
 
-        const text = data
+        const text = data.Search[0]
         setText(text)
     }
 
     useEffect( ()=> {
-      fetch(`https://www.omdbapi.com/?s=${search}&apikey=f195b326`)
+      fetch(`https://www.omdbapi.com/?s=&apikey=f195b326`)
   }, [search])
 
   return (
      <>
        <h1>Movie App</h1>
-       <input type="text" value={text} placeholder='Enter any Movie Name' onChange={(e) => setSearch(e.target.value)}/>
+       <input type="text" value={search} placeholder='Enter any Movie Name' onChange={(e) => setSearch(e.target.value)}/>
        <button onClick={fetechMovies}>Search</button>
        <Movie text={text}/>
      </>

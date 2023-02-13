@@ -4,8 +4,8 @@ function Movie({text}){
    return (
 
        <>
-          <h1>{text}</h1>
-          <img src={text} alt="" />
+          <h1>{text.Title}</h1>
+          <img src={text.Poster} alt="" />
        </>
    )
 }
