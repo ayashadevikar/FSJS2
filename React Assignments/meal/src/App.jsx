@@ -17,7 +17,7 @@ function App() {
    }
 
 
-        const {data} = await Axios.get(`https://www.omdbapi.com/?s=${search}&apikey=f195b326`)
+        const {data} = await Axios.get(`www.themealdb.com/api/json/v1/1/search.php?s=${text}`)
         console.log("Response", data)
 
         const text = data
@@ -25,7 +25,7 @@ function App() {
     }
 
     useEffect( ()=> {
-      fetch(`https://www.omdbapi.com/?s=${search}&apikey=f195b326`)
+      fetch(`www.themealdb.com/api/json/v1/1/search.php?s=${text}`)
   }, [search])
 
   return (
