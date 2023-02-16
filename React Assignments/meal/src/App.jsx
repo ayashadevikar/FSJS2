@@ -12,7 +12,7 @@ function App() {
     const fetechMovies = async () => {
         
       if(search === ""){
-        alert("Enter any Movie Name")
+        alert("Enter any Meal Name")
         return;
    }
 
@@ -31,7 +31,7 @@ function App() {
   return (
      <>
        <h1>Movie App</h1>
-       <input type="text" value={text} placeholder='Enter any Movie Name' onChange={(e) => setSearch(e.target.value)}/>
+       <input type="text" value={text} placeholder='Enter any Meal Name' onChange={(e) => setSearch(e.target.value)}/>
        <button onClick={fetechMovies}>Search</button>
        <Movie text={text}/>
      </>
