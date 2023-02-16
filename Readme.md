@@ -52,4 +52,6 @@
 ## JavaScript Dom Assignments
 [Project 1- Create circles on webpage](https://create-circles-dom-project1.netlify.app/)
 
+[Project 2- Random Background Color Change]
+
 [28jan JavaScript DOM Assignment](./JavaScript%20DOM%20Assignments/28th%20Jan%20JavaScript2.0(DOM%20Assignment))
