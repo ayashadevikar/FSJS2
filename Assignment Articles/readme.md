@@ -18,4 +18,6 @@
 
 [9. CSS Box Model](https://ayashadevikar.hashnode.dev/css-box-model) 
 
+[10. Array Methods in JavaScript](https://ayashadevikar.hashnode.dev/array-methods-in-javascript) 
+
 
