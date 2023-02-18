@@ -16,4 +16,6 @@
 
 [8. Flexbox and it's Properties](https://ayashadevikar.hashnode.dev/flexbox-and-its-properties)
 
+[9. CSS Box Model](https://ayashadevikar.hashnode.dev/css-box-model) 
+
 
