@@ -14,3 +14,6 @@
 
 [7. CSS Positions](https://ayashadevikar.hashnode.dev/css-positions)
 
+[8. Flexbox and it's Properties](https://ayashadevikar.hashnode.dev/flexbox-and-its-properties)
+
+
