@@ -12,3 +12,5 @@
 
 [6. CSS Selectors](https://ayashadevikar.hashnode.dev/css-selectors)
 
+[7. CSS Positions](https://ayashadevikar.hashnode.dev/css-positions)
+
