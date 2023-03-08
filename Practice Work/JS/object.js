@@ -16,7 +16,7 @@ const obj1 = {
 
 }
 
-// obj1.surname = francis
+// obj1.surname = 'francis'
 // obj1['year'] = 2000
 
 // part 2
