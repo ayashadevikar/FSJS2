@@ -8,3 +8,5 @@
 
 [4. CSS Grid](https://ayashadevikar.hashnode.dev/css-grid)
 
+[5. HTML Input Types](https://ayashadevikar.hashnode.dev/html-input-types)
+
