@@ -6,3 +6,5 @@
 
 [3. Media Query](https://ayashadevikar.hashnode.dev/media-query)
 
+[4. CSS Grid](https://ayashadevikar.hashnode.dev/css-grid)
+
