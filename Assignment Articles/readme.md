@@ -4,3 +4,5 @@
 
 [2. Audio and Video Tags](https://ayashadevikar.hashnode.dev/audio-and-video-tag)
 
+[3. Media Query](https://ayashadevikar.hashnode.dev/media-query)
+
