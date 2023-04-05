@@ -1,0 +1,631 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+   
+   max-width: 1440px;
+   overflow-x: hidden;
+   margin: auto;
+   font-family: 'Manrope';
+}
+
+/* navbar */
+.navbar{
+    background-image: url(./Photos/mainBackground.png),
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5));;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-size: 100% 100%; 
+    height: 900px; 
+   
+    background-blend-mode: overlay;
+
+}
+
+.navbar > .header{
+    display: flex;
+    /* justify-content: space-between; */
+    justify-content: center;
+    align-items: center;
+    gap: 600px;
+    padding-top: 30px;
+}
+
+.navbar > .header > img{
+    display: flex;
+    height: 50px;
+   
+    
+}
+
+.navbar > .header >.items{
+      list-style-type: none;
+      display: flex;
+      gap: 50px;
+      color: #ffffff;
+}
+
+.navbar > .header >.items > li:hover{
+    cursor: pointer;
+    text-decoration: underline rgb(198, 224, 29);
+    color: rgb(241, 148, 148);
+}
+
+
+ .horizontal-line > .line{
+    border-bottom: 2px solid #ffffff;
+    margin: 0 100px ;
+    padding: 15px;
+ }
+
+.navbar > .living-life{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #ffffff;
+    position: absolute;
+    top: 300px;
+    left: 180px;
+    
+    
+}
+
+.navbar > .living-life > .heading{
+       font-size: 50px;
+       width: 550px;
+}
+
+.navbar > .living-life > .para{
+      width: 350px;
+}
+
+.navbar > .living-life > .learn-btn > button{
+    background-color: #6663e8;;
+    border: none;
+    color: #ffffff;
+    padding: 15px 40px;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: 600;
+    position: relative;
+    top: 40px;
+}
+
+.navbar > .living-life > .learn-btn > button:hover{
+    cursor: pointer;
+    background-color: #ffffff;
+    color: rgb(0, 162, 255)
+}
+
+/* logo images */
+
+.logo-imgs{
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid #1d1d1d;
+    padding: 55px 80px;
+    border-radius: 15px;
+    background-color: #ffffff;
+    border: none;
+    text-align: center; 
+    margin: 0px 50px;
+    position: relative;
+    top: -110px;
+}
+
+.logo-imgs > div > .img1:hover{
+    cursor: pointer;
+    transition: 0.3 sec;
+    scale: 1.2;
+}
+
+.logo-imgs > div > .img2:hover{
+    cursor: pointer;
+    transition: 0.3 sec;
+    scale: 1.2;
+}
+
+.logo-imgs > div > .img3:hover{
+    cursor: pointer;
+    transition: 0.3 sec;
+    scale: 1.2;
+}
+
+.logo-imgs > div > .img4:hover{
+    cursor: pointer;
+    transition: 0.3 sec;
+    scale: 1.2;
+}
+
+.logo-imgs > div > .img5:hover{
+    cursor: pointer;
+    transition: 0.3 sec;
+    scale: 1.2;
+}
+
+
+.logo-imgs > div > .img6:hover{
+    cursor: pointer;
+    transition: 0.3 sec;
+    scale: 1.2;
+}
+
+
+/* best estate */
+.best-estate > .estate-card {
+    padding-top: 500px;
+     display: grid;
+     grid-template-columns: 22% 22% 22%;
+     row-gap: 40px;
+     justify-content: center;
+     align-content: center;
+     height: 100vh;
+     width: 100%;
+}
+
+
+.best-estate > .estate-heading > h1{
+       font-size: 40px;
+       width: 480px;
+       text-align: center;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       position: relative;
+       left: 450px;
+}
+
+
+ .best-estate > .estate-card > div > img{
+      height: 300px;
+      width: 300px;
+      border-radius: 15px;
+} 
+
+ .best-estate > .estate-card > div > .heading{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    background-color: #ffffff;
+    border: none;
+    width: 240px;
+    padding: 12px 20px;
+    border-radius: 15px;
+    position: relative;
+    left: 25px;
+    top: -45px; 
+    
+}  
+
+.best-estate > .estate-card > div > .heading > .price > h1{
+      font-size: 20px;
+      font-weight: 200;
+}
+
+.best-estate > .estate-card > div > .heading > .price > span{
+       color: rgba(34, 34, 201, 0.942);
+
+}
+
+.best-estate > .estate-card > div > .heading > .price {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.best-estate > .estate-card > div > .heading > .detail-btn > button{
+    background-color: rgba(35, 35, 177, 0.652);
+    border: none;
+    color: #ffffff;
+    padding: 10px 25px;
+    border-radius: 20px;
+}
+
+.best-estate > .estate-card > .card2{
+    position: relative;
+    top: 20px;
+}
+
+
+.best-estate > .estate-card > .card3{
+    position: relative;
+    top: 40px;
+}
+
+.best-estate > .estate-card > .card4{
+    position: relative;
+    top: 60px;
+}
+
+.best-estate > .estate-card > .card5{
+    position: relative;
+    top: 30px;
+}
+
+.best-estate > .estate-card > .card7{
+    position: relative;
+    top: 30px;
+} 
+
+.best-estate > .estate-card > .card8{
+    position: relative;
+    top: 30px;
+} 
+
+.best-estate > .estate-card > .card9{
+    position: relative;
+    top: 60px;
+} 
+
+
+.best-estate > .estate-card > .card1:hover{
+    cursor: pointer;
+    transition: all 0.3 sec;
+    scale: 1.1;
+}
+
+.best-estate > .estate-card > .card2:hover{
+    cursor: pointer;
+    transition: all 0.3 sec;
+    scale: 1.1;
+}
+
+.best-estate > .estate-card > .card3:hover{
+    cursor: pointer;
+    transition: all 0.3 sec;
+    scale: 1.1;
+}
+
+.best-estate > .estate-card > .card4:hover{
+    cursor: pointer;
+    transition: all 0.3 sec;
+    scale: 1.1;
+}
+
+.best-estate > .estate-card > .card5:hover{
+    cursor: pointer;
+    transition: all 0.3 sec;
+    scale: 1.1;
+}
+
+.best-estate > .estate-card > .card6:hover{
+    cursor: pointer;
+    transition: all 0.3 sec;
+    scale: 1.1;
+}
+
+.best-estate > .estate-card > .card7:hover{
+    cursor: pointer;
+    transition: all 0.3 sec;
+    scale: 1.1;
+}
+
+.best-estate > .estate-card > .card8:hover{
+    cursor: pointer;
+    transition: all 0.3 sec;
+    scale: 1.1;
+}
+
+.best-estate > .estate-card > .card9:hover{
+    cursor: pointer;
+    transition: all 0.3 sec;
+    scale: 1.1;
+}
+
+.best-estate > .estate-card > div > .heading > .price > span:hover{
+    cursor: pointer;
+    color: rgb(0, 255, 102);
+   
+
+}
+
+.best-estate > .estate-card > div > .heading > .price:hover {
+    cursor: pointer;
+    color: rgb(255, 0, 195)
+}
+
+.best-estate > .estate-card > div > .heading > .detail-btn > button:hover{
+    cursor: pointer;
+    background-color: rgb(209, 92, 249);
+    color: rgb(255, 0, 0)
+}
+
+
+/* trendy */
+.trendy{
+   display: flex;
+   flex-direction: column;
+   gap: 150px;
+   padding-top: 700px;
+}
+
+.trendy > .modern-estate1-left{
+    display: flex;
+    
+}
+
+.trendy > .modern-estate1-left > .feature1-img > img{
+      height: 400px;
+      width: 530px;
+      
+}
+
+.trendy > .modern-estate1-left > .house1-img > img{
+    height: 380px;
+    width: 358px;
+    position: relative;
+    left: -420px;
+    top: -70px;
+    border-radius: 40px;
+}
+
+.trendy > .modern-estate1-left > .house1-img > img:hover{
+    cursor: pointer;
+    transition: all 0.3 sec;
+    scale: 1.1;
+
+}
+
+.trendy > .modern-estate1-left > .modern-estate2-right{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+ 
+}
+
+.trendy > .modern-estate1-left > .modern-estate2-right > .heading{
+    font-size: 40px;
+    width: 480px;
+}
+
+.trendy > .modern-estate1-left > .modern-estate2-right > .para{
+    width: 400px;
+    color: #615a5a;
+  
+}
+
+.trendy > .modern-estate1-left > .modern-estate2-right > .btn1 > button{
+      background-color: rgba(35, 35, 177, 0.652);
+      border: none;
+      color: #ffffff;
+      padding: 15px 40px;
+      border-radius: 25px;
+      font-size: 15px;
+      font-weight: 600;
+}
+
+
+.trendy > .modern-estate1-left > .modern-estate2-right > .btn1 > button:hover{
+         cursor: pointer;
+         background-color: rgb(103, 157, 48);
+         color: rgb(243, 119, 191);
+}
+
+.trendy > .trendy-book{
+    display: flex;
+    justify-content: space-around;
+}
+
+.trendy > .trendy-book > .modern-estate3-left{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.trendy > .trendy-book  > .modern-estate3-left > .heading{
+    font-size: 30px;
+    width: 400px;
+}
+
+.trendy > .trendy-book  > .modern-estate3-left > .para{
+    width: 400px;
+}
+
+
+.trendy > .trendy-book  > .modern-estate3-left > .btn2 > button{
+    background-color: rgba(35, 35, 177, 0.652);
+    border: none;
+    color: #ffffff;
+    padding: 15px 40px;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+
+
+.trendy > .trendy-book  > .modern-estate3-left > .btn2 > button:hover{
+    cursor: pointer;
+    background-color: rgb(103, 157, 48);
+    color: rgb(243, 119, 191);
+}
+
+.trendy > .trendy-book > .modern-estate4-right{
+   display: flex;
+}
+
+.trendy > .trendy-book > .modern-estate4-right > .house2-img > img{
+    height: 380px;
+    width: 384px;
+    position: relative;
+    left: 429px;
+    top: -70px;
+    border-radius: 30px;
+}
+
+.trendy > .trendy-book > .modern-estate4-right > .house2-img > img:hover{
+    cursor: pointer;
+    transition: all 0.3 sec;
+    scale: 1.1;
+}
+
+.trendy > .trendy-book > .modern-estate4-right > .feature2-img > img{
+    height: 400px;
+      width: 530px;
+    
+}
+
+
+
+/* newsletter */
+.newsletter{
+    padding-top: 500px;
+     border: 1px solid black;
+     padding: 60px 0px;
+     border-radius: 50px;
+     margin: 0px 50px;
+     background-color: rgba(35, 35, 177, 0.652);
+     color: #ffffff;
+     border: none;
+     display: flex;
+     flex-direction: column;
+     gap: 20px;
+     text-align: center;
+     align-items: center;
+}
+
+.newsletter > .heading{
+     font-size: 40px;
+     width: 850px;
+     font-weight: 100;
+     text-align: center;
+}
+
+.newsletter > .para{
+    font-size: 15px;
+    width: 540px;
+    text-align: center;
+}
+
+.newsletter > .subscribe{
+    display: flex;
+    gap: 15px;
+}
+
+.newsletter > .subscribe > .mail-img{
+    height: 20px;
+    position: relative;
+    left: 50px;
+    top: 12px;
+}
+
+.newsletter > .subscribe > .email{
+    padding: 15px 50px;
+    background-color: rgb(87, 87, 200);
+    color: #ffffff;
+    border: none;
+    border-radius: 30px;
+    width: 400px;
+}
+
+.newsletter > .subscribe > .email::placeholder{
+    color: #c9b6b6;
+}
+
+.newsletter > .subscribe > .email:hover{
+    background-color: #767171;
+
+}
+
+
+
+.newsletter > .subscribe > .subscribe-btn{
+     color:  rgba(77, 77, 198, 0.652);
+     border-radius: 25px;
+     border: none;
+     padding: 15px 35px;
+    display: flex;
+    font-weight: 600;
+}
+
+.newsletter > .subscribe > .subscribe-btn:hover{
+    background-color: rgb(77, 243, 243);
+    color: #ffffff;
+}
+
+
+/* footer */
+.footer{
+     padding-top: 90px;
+     display: flex;
+     justify-content: space-evenly;
+     padding-bottom: 90px;
+   
+}
+
+.footer > .left-footer{
+     display: flex;
+     flex-direction: column;
+     gap: 30px;
+      position: relative;
+     left: -120px;
+    
+    
+     
+}
+
+.footer > .left-footer > img{
+     height: 50px;
+     display: flex;
+     align-self: flex-start;
+}
+
+.footer > .left-footer > .social-imgs{
+     display: flex;
+     gap: 20px;
+}
+
+.footer > .left-footer > .social-imgs > img{
+    height: 40px;
+}
+
+.footer > .left-footer > .para{
+    width: 250px;
+    line-height: 25px;
+    padding-top: 20px;
+}
+
+.footer > .right-footer{
+    
+    display: flex;
+     gap: 150px;
+     position: relative;
+     left: 90px;
+   
+  
+}
+
+.footer > .right-footer > div > h1{
+   
+     font-size: 18px;
+     font-weight: 600;
+    
+}
+
+.footer > .right-footer > div > h1:hover{
+   color: #615a5a;
+       
+   
+}
+
+.footer > .right-footer > div > .lists{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 20PX;
+   
+}
+
+.footer > .right-footer > div > .lists > li:hover{
+    color: #615a5a;
+}

@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Search */
+    background: #F9F5ED;
+}
+nav{
+    padding: 20px 10%;
+    height: 15vh;
+}
+nav li img {
+    height: 30px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+
+}
+
+nav ul li {
+    list-style: none;
+    margin-right: 5%;
+    /* gap: 50px; */
+    font-weight: 500;
+}
+
+
+/* CSS for HERO Section */
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10%;
+}
+
+.leftmain{
+    width: 40%;
+}
+
+.leftmain h1{
+    font-size: 67px;
+}
+
+.leftmain p{
+    margin: 5% 0;
+}
+
+.leftmain button{
+    padding: 14px 18px;
+    border: none;
+    background-color: #3b855b;
+    border-radius: 8px;
+    color: white;
+    font-weight: 500;
+}
+
+.rightmain{
+    width: 60%;
+    position: relative;
+    left: 200px;
+}
+
+.rightmain div > img:nth-child(1){
+    padding: 8px;
+    height: 250px;
+}
+
+.rightmain div > img:nth-child(2){
+    margin: 5px;
+    height: 290px;
+}
+
+.headphone img{
+    margin: 4px;
+    width: 460px;
+    height: 400px;
+}

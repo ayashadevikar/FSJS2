@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <style>
+        /* universal Selector */
+      * {
+        background-color: grey;
+      }
+
+      /* individual selector */
+       li {
+         color: red;
+       }
+
+       /* class and id selector */
+        .link {
+            background-color: #ffffff;
+        }
+
+        #test {
+             font-size: 30px;
+        }
+
+       /* combined selector */
+        p, li {
+            background-color: lightblue;
+        }
+
+        /* inside an element */
+         div ul li {
+            list-style-type: square;
+         }
+
+         /* direct child */
+         div li {
+            font-style: italic;
+         }
+
+         /* sibling  ~ or + */
+          .sibling ~ p  {
+                text-align: center;
+           }
+
+
+    </style>
+</head>
+<body>
+    <div>
+    <h1>Selectors</h1>
+    <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</span>
+    <p>Lorem ipsum dolor sit amet.</p>
+      <ul>
+        <li class="link">item1</li>
+        <li>item2</li>
+        <li>item3</li>
+        <li>item4</li>
+       </ul>
+   </div> 
+
+      <p>Lorem ipsum dolor sit amet.</p>
+       <ol>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JS</li>
+       </ol>
+  
+       <div id="test">
+        <p>lorem</p>
+        <li>hello world</li>
+        <ul>
+            <li>This is link<a href="#">Home</a></li>
+            <li>Script</li>
+        </ul>
+       </div>
+
+       <section>
+        <p class="sibling">test1</p>
+        <p>test2</p>
+        <p>test3</p>
+        <p>test4</p>
+        <p>test5</p>
+       </section>
+
+
+  
+</body>
+</html>
+
+

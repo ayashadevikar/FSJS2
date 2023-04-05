@@ -1,0 +1,517 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    max-width: 1440px;
+    overflow-x: hidden;
+    margin: auto;
+    background-color: #0D0D0D;
+    color: #ffffff;
+    font-family: 'Poppins';
+}
+
+/* navbar */
+.navbar{
+     display: flex;
+     justify-content: space-evenly;
+     padding-top: 70px;
+}
+
+.navbar > .main-img{
+    position: relative;
+    top: -190px; 
+}
+
+.navbar > .main-img:hover{
+    cursor: pointer;
+    scale: 1.1;
+      transition: 0.1;
+}
+
+.navbar > .overview{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+} 
+
+.navbar > .overview > .item{
+    display: flex;
+    gap: 70px;
+    list-style-type: none;
+} 
+
+.navbar > .overview > .item > li:hover{
+    cursor: pointer;
+    color: rgb(87, 85, 85);
+}
+
+.navbar > .overview > .item > button{
+    background-color: rgb(27, 29, 31);
+    color: #ffffff;
+    border: none;
+    padding: 15px 50px;
+    border-radius: 10px;
+    position: relative;
+    top: -8px;
+    
+}
+
+.navbar > .overview > .item > button:hover{
+    background-color: rgb(238, 218, 218);
+    color: rgb(4, 254, 100);
+    cursor: pointer;
+}
+
+.navbar > .overview > .heading > img{
+    width: 400px;
+    padding-left: 60px;
+}
+
+.navbar > .overview > .heading > h2{
+    font-size: 50px;
+}
+
+.navbar > .overview > .info{
+     display: flex;
+    flex-direction: column;
+    gap: 10px; 
+}
+
+.navbar > .overview > .info > h1{
+    font-weight: 100;
+}
+
+.navbar > .overview > .info > p{
+    font-size: 15px;
+    width: 350px;
+    line-height: 2;
+}
+
+.navbar > .overview > .shopping-btn{
+     display: flex;
+     gap: 15px;
+     justify-content: center;
+     align-items: center;
+     background-color: rgb(27, 29, 31);
+     width: 33%;
+     padding: 10px 10px;
+     border-radius: 5px
+} 
+
+.navbar > .overview > .shopping-btn:hover{
+    background-color: rgb(69, 64, 64);
+    color: rgb(4, 254, 100);
+    cursor: pointer;
+}
+
+.navbar > .overview > .shopping-btn > img{
+     width: 15px;
+     height: 17px;
+}
+
+
+.navbar > .overview > .shopping-btn > .add-to-bag{
+     font-size: 15px;
+}
+
+.navbar > .overview > .shopping-btn > .price{
+    font-weight: 500;
+}
+
+
+/* logo-img */
+.logo-img{
+  display: flex;
+  justify-content: space-evenly;
+   
+}
+
+/* specs */
+.specs{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+      height: 100vh;
+      width: 100%;
+}
+
+
+
+.specs > .specs-left-section > .equipements > div:nth-child(2){ 
+    position: relative;
+    left: -30px; 
+  
+}
+
+.specs > .specs-left-section > .equipements > div:nth-child(3){ 
+    position: relative;
+    left: -30px; 
+    
+}
+
+.specs > .specs-left-section > div > .specs-logo{
+    position: relative;
+   left: 120px;
+    
+} 
+
+
+.specs > .specs-left-section > .equipements{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+}
+
+.specs > .specs-left-section > .equipements{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  align-items: flex-start;
+    gap: 30px;
+    
+}
+
+
+
+.specs > .specs-left-section > .equipements > .headphone > h3{
+  font-size: 15px;
+  font-weight: 100;
+}
+
+.specs > .specs-left-section > .equipements >  .headphone > span{
+    font-size: 12px;
+    font-weight: 100;
+    color:rgb(196, 186, 186);
+}
+
+.specs > .specs-right-section{
+    position: relative;
+    top: 50px;
+    left: 20px;
+}
+
+
+
+/* case */
+.case{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+     height: 70vh;
+     width: 100%;
+}
+
+.case > .case-left-section > div > .case-logo-img{
+     position: relative;
+     left: 250px;
+}
+
+.case > .case-left-section > div > .case-logo-img:hover{
+  cursor: pointer;
+  scale: 1.1;
+  transition: 0.1;
+}
+
+.case > .case-left-section > div > .case-img:hover{
+    cursor: pointer;
+    scale: 1.1;
+    transition: 0.1;
+  }
+  
+.case > .case-right-section{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+
+.case > .case-right-section > div{
+       font-size: 15px;
+        width: 210px;
+        line-height: 2;
+     
+}
+
+.case > .case-right-section > .btn{
+        display: flex;
+        gap: 10px;
+        background-color: rgb(27, 29, 31);
+        width: 150px;
+        padding: 15px;
+        border: none;
+        color: #ffffff;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        border-radius: 5px;
+}
+
+.case > .case-right-section > .btn:hover{
+    background-color: rgb(69, 64, 64);
+  
+    cursor: pointer;
+}
+
+.case > .case-right-section > .btn > a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.case > .case-right-section > .btn > a:hover{
+    color: rgb(4, 254, 100);
+    cursor: pointer;
+}
+
+
+/* immerse */
+.immerse {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+     background-color: rgb(27, 29, 31);
+     border-radius: 10px;
+     width: 1000px;
+     padding: 30px;
+     position: relative;
+     left: 270px;
+     top: 100px;
+     }
+
+.immerse > .music-left-section{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+     }
+
+  .immerse > .music-left-section > button{
+        background-color: rgb(12, 12, 12);
+        width: 150px;
+        padding: 15px;
+        border: none;
+        color: #ffffff;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        border-radius: 5px;
+        
+  }   
+
+  .immerse > .music-left-section > button:hover{
+    background-color: rgb(77, 73, 73);
+    cursor: pointer;
+    color: rgb(0, 195, 255);
+  }
+
+  .immerse > .music-left-section > button > img{
+     height: 20px;
+  }
+
+  .immerse > .music-left-section > button > span{
+    font-size: 15px;
+ }
+
+/* choose style */
+.style{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    text-align: center;
+    width: 100vw;
+    height: 100%;
+    padding-top: 200px;
+      
+}
+
+
+.style > .headphones{
+    display: grid;
+    grid-template-columns: 17% 17% 17%;
+    justify-content: center;
+    align-content: center;
+    row-gap: 80px;
+    height: 50vh;
+    width: 100%; 
+}
+
+.style > .headphones > .head-style{
+      background-color: rgb(27, 29, 31); 
+       width: 180px; 
+       height: 160px; 
+       border-radius: 10px;  
+      
+}
+
+
+.style > .headphones > .head-style > .bottom-text{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    justify-content: space-around;
+    height: 10%; 
+   
+     
+}
+
+
+
+
+.style > .headphones > .head-style > .bottom-text > div{
+    text-align: justify;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+
+
+.style > .headphones > div > .headphone-img{
+    height: 100px;
+    position: relative;
+    top: -40px;
+}
+
+.style > .headphones > .head-style > .bottom-text >  .shop-img{
+    height: 30px;
+    background-color: rgb(15, 16, 15);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 5px;
+   
+  
+}
+
+
+.style > .headphones > .head-style > .bottom-text >  .shop-img > .group-img{
+    height: 18px;
+
+}
+
+/* footer */
+.footer{
+     padding-top: 150px;
+     display: flex; 
+     justify-content: space-evenly;
+     padding-bottom: 150px;
+
+}
+
+.footer >  .twitter-dark-img{
+    height: 30px;
+    position: relative;
+    top: 70px;
+}
+
+.footer > div > .beats-logo-img{
+     height: 25px;
+     position: absolute;
+     left: 310px;
+}
+
+.footer > .footer-list{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    position: relative;
+    left: -100px;
+}
+
+.footer > .footer-list > .heading{
+    font-size: 9px;
+    
+}
+
+
+.footer > .footer-list > .heading:hover{
+    cursor: pointer;
+    color: #808080;
+    
+}
+
+.footer > .footer-list > ul{
+     list-style-type: none;
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+     color: rgb(186, 180, 180);
+     font-size: 13px;
+}
+
+.footer > .footer-list > ul > li:hover{
+  cursor: pointer;
+  color: #808080;
+}
+
+.footer > .email-address > .input-btn > .email-input{
+    display: flex;
+    background-color: rgb(27, 29, 31);
+    padding: 8px 10px; 
+    border-radius: 5px;
+    
+  
+}
+
+.footer > .email-address > .input-btn{
+     display: flex;
+}
+
+.footer > .email-address > .input-btn > .email-input > .email{
+    background-color: rgb(27, 29, 31); 
+    border: none;
+    width: 180px;
+   
+}
+
+.footer > .email-address > .input-btn > .email-input > .email::placeholder{
+    color: #ffffff;
+}
+
+.footer > .email-address > .input-btn > .email-input > button{
+    display: flex;
+    gap: 10px;
+    background-color: rgb(12, 12, 12);
+    border: none;
+    color: #ffffff;
+    padding: 10px 10px;
+    border-radius: 5px;
+
+}
+
+.footer > .email-address{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    position: relative;
+    left: -80px;
+      
+}
+
+.footer > .email-address > .imgs{
+    display: flex;
+    gap: 15px;
+}
+
+.footer > .email-address > .imgs > .uparrow-img {
+     position: relative;
+     left: 350px;
+     top: 10px;
+}
+
+.footer > .email-address > .imgs > .uparrow-img > img{
+    height: 30px;
+}

@@ -1,0 +1,189 @@
+/* You can not modify anything from the HTML file */
+/* You can only modify the CSS file */
+
+
+ .navbar-container{
+    position: relative;
+    top: 20px;
+    left: 1px; 
+    display: flex;
+   
+} 
+
+
+.list{
+    display: flex;
+    gap: 50px;
+    list-style-type: none;
+    margin-top: 35px;
+    margin-left: 170px; 
+    font-family: 'Orbitron'; 
+    font-size: 20px;
+    font-weight: 500;
+
+} 
+
+nav > div > img {
+    margin-top: 25px;
+    margin-left: 110px;
+    width: 100px;  
+}
+
+ul li:first-child{
+    font-weight: 700;
+    font-size: 25px;
+    margin-top: -5px;
+ }
+
+  ul:nth-child(1)::after{
+        content:'';
+        position: relative;
+        width: 45px;
+        border-bottom: 2px solid #1d1d1d;
+        right: 550px;
+       
+ }
+    
+ 
+ .search-icon{
+    
+    position: absolute;
+    height: 5px;
+    width: 5px;
+    left: 1150px;
+    top: 1px;
+    bottom: 20px;
+    margin: auto; 
+} 
+
+.nav-button{
+    background-color: #ffffff;
+    color: #6c6d6d;
+    border: 3px solid #0D0D0D;
+    margin-left: 150px;
+    position: absolute;
+    bottom: 15px; 
+    
+   }
+
+   .button-group .nav-button{
+    font-family:'Poppins';
+    font-size: 20px;
+    border-radius: 13px;
+    padding: 3px 37px;
+   }
+ 
+
+   .hero-container > span > img{
+      position: relative;
+      top: 365px;
+      left: 270px;
+      height: 300px;
+   }
+   
+
+.hero-container > div > img{
+   position: relative;
+   bottom: 190px;
+   left: 110px;
+   width: 400px;
+   
+}
+
+.hero-container > span:nth-child(4) > img{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: 750px;
+    top: 165px;    
+}
+ 
+   
+.hero-container > span:nth-child(2) > img{
+    position: absolute;
+    left: 1215px; 
+    height: 45px;
+    top: 220px;
+    }
+
+    .hero-container > span:nth-child(3) > img{
+        position: absolute;
+        top: 675px; 
+        left: 650px;
+        right: 760px;
+        height: 35px;
+    }
+
+ .hero-heading{
+    float: right;
+    font-family: 'Orbitron';
+    font-size: 50px;
+    margin-top: -600px;
+    margin-right: 215px;
+ }
+
+.hero-description{
+    float: right;
+    font-family:'Poppins';
+    font-size: 15px;
+    width: 650px;
+    height: 30px;
+    margin-top: -500px;
+    margin-right: 170px;
+    text-align: center;
+}
+
+div > button:nth-child(1)
+{
+    float: right;
+    float: right;
+    border-radius: 5px;
+    padding: 2px 35px;
+     font-family: 'Orbitron';
+    font-size: 15px;
+    margin-right: 500px;
+    margin-top: -375px;
+}
+
+div > button:nth-child(2)
+{
+    float: right;
+     background-color: #0D0D0D;
+     color:#CAD5E2;
+     padding: 2px 10px;
+     border-radius: 5px;
+     font-family: 'Orbitron';
+     font-size: 15px;
+     margin-top: -375px;
+     margin-right: 370px;
+}
+
+
+.contact-heading{
+    float: right;
+    font-family:'Poppins';
+    font-size: 16px;
+    font-weight: 600;
+    color: #758283;
+    margin-right: 485px; 
+    margin-top: -230px;
+
+} 
+ 
+.icons > span:nth-child(n) > img{
+    height: 23px;
+    width: 23px;
+    position: relative;
+    /* left: 120px; */
+    left: 900px;
+    /* top:-20px; */
+    bottom: 200px;
+    padding: 5px;
+
+
+}
+
+
+
+
+

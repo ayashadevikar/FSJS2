@@ -1,0 +1,103 @@
+/* You can not modify anything in the HTML */
+/* You can only modify the CSS file */
+
+body {
+    background-image: url(./assets/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 100%  100%;
+    height: 1200px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color: #0D0D0D;
+    padding: 15px;
+    width: 17500px;
+    margin-top: -8px;
+    margin-left: -8px; 
+}
+
+.logo {
+    margin-left: 90px;
+    width: 90px;
+}
+
+.list{
+    flex:2;
+    display: flex;
+    column-gap: 70px;
+    list-style-type: none;
+    color: #ffffff;
+    font-family: 'Poppins';
+
+}
+
+ .list-item:first-child::after{
+   content: "\0002C7";
+   position: absolute;
+   top: 17px;
+   left: 23%;
+   margin: 15px;
+   font-size: 25px;
+   font-family: 'Poppins';
+ 
+
+ }
+   
+
+.line{
+    border-left: 2px solid #ffffff;
+    height: 50px;
+    margin-left: 80px;
+}
+
+.button-small{
+    background-color: #e224f0e0;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-left: 330px;
+    font-size: 15px;
+}
+
+.hero{
+    flex-direction: column;
+    color:#ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+
+}
+
+.hero-heading{
+     font-family:'Montserrat';
+     font-size: 90px;
+     width: 1000px;
+     font-weight: 600;
+     margin-top: 145px;
+     margin-left: 70px;
+     text-align: center;
+     
+} 
+
+.hero-description {
+    font-family: 'Poppins';
+     font-size: 30px;
+     margin-top: -70px;
+    
+} 
+
+ .button-large{
+    background-color: #a7228f;
+    border: none;
+    color: #ffffff;
+    padding: 8px 15px;
+    border-radius: 8px;
+    font-family: 'Poppins';
+    font-size: 25px;
+    font-weight: 500;
+    margin-top: 60px;
+} 
