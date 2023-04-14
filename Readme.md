@@ -66,6 +66,6 @@
 
 ## React Assignments
 
-[Project 1- ToDo App](https://fastidious-mousse-fceb7f.netlify.app/)
+[Project 1- ToDo App](https://todo-react-app-1.netlify.app/)
 
 [Project 4- Pokemon App]()
