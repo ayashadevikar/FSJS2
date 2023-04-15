@@ -68,7 +68,7 @@
 
 [Project 1- ToDo App](https://todo-react-app-1.netlify.app/)
 
-[Project 3- Meal App](https://jovial-mandazi-77781d.netlify.app/)
+[Project 3- Meal App](https://meal-react-app3.netlify.app/)
 
 [Project 4- Pokemon App]()
 
