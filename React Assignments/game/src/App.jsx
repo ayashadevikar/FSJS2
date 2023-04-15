@@ -5,44 +5,47 @@ import './App.css'
 
 function App() {
 
-  const [userChoice, setuserChoice] = useState("")
-  const [computerChoice, setcomputerChoice] = useState("Rock,Paper,Scissor")
+  // let userChoice=""
+
+  const [userChoice, setUserChoice] = useState("") 
+  const [computerChoiceArray, setComputerChoice] = useState(["Rock" , "Paper" , "Scissor"])
 
 
   const condition = (value) => {
-    userChoice = value //jo value waha se bhejegi
-    const computerChoice = Math.floor(Math.random()*3)
+  debugger
+  const userChoice = value;
+  //  const userChoice = ["Rock", "Paper", "Scissor"]; 
+  
+    // const computerChoice = (userChoice[Math.floor(Math.random() * 3)]);
+   
+  // tUserChoic  see("userChoice");
+  
+  
+  
+  const randomIndex=Math.floor(Math.random() * computerChoiceArray.length)
+  const computerChoice=computerChoiceArray[randomIndex];
+  
 
-      if(userChoice=="Rock" && computerChoice=="Scissor")
+      if(userChoice === "Rock" && computerChoice === "Scissor")
       {
-        //apan jeetege
+        
+        alert(`"You Won!! Computer Chose ${computerChoice}`);
       }
-      else if(userChoice=="Paper" && computerChoice=="Rock")
+      else if(userChoice === "Paper" && computerChoice === "Rock")
       {
-        //apan jeetege
+        alert(`"You Won!! Computer Chose ${computerChoice}`);
       }
-      else if(userChoice=="Scissor" && computerChoice=="Paper")
+      else if(userChoice === "Scissor" && computerChoice === "Paper")
       {
-        //apan jeetege
+        alert(`"You Won!! Computer Chose ${computerChoice}`);
       }
-      else if(userChoice==computerChoice)
-      {
-        //Draw
-      }
-      else
-      {
-        //Computer Jeet gaya
+      else if(userChoice === computerChoice)
       }
 
-
-      
-
+     
+     
      }
   
-  
-
-  
-
 
   return (
      <>

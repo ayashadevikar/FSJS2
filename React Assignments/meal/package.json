@@ -2,7 +2,7 @@
   "name": "meal",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
+   "Content-Type": "application/javascript",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

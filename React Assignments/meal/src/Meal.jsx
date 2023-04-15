@@ -5,16 +5,10 @@ function Meal({text}){
 
        <>
         
-        <div>
-           <ul>
-                 {text.map((t) => (
-                     <li key={t}>{t}</li>
-                 ))}
-           </ul>
+        
          <h1>{text.strMeal}</h1>
          <img src={text.strMealThumb} alt="" />
-
-         </div>
+ 
        </>
    )
 }

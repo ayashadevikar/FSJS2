@@ -1,10 +1,11 @@
 import { useState } from 'react'
 
 import './App.css'
+import './index.css'
 
 
 
-function ToDoList(){
+function TodoTask(){
 
   const [task, setTask] = useState([]);
   const [text, setText] = useState("");
@@ -76,15 +77,18 @@ function ToDoList(){
 
 
   return(
-      <div>
-           
 
-           <input type="text" value={text} onChange={(e) => setText(e.target.value)}/>
+      <div>
+            
+         <form className='todoForm'>
+               <input type="text" value={text} onChange={(e) => setText(e.target.value)}/>
            
-            { 
-            editbtn? <button onClick={onAddTask}>Update</button> : <button onClick={onAddTask}>Add</button>}
-          
-          
+              { 
+                editbtn? <button onClick={onAddTask}>Update</button> : <button onClick={onAddTask}>Add</button>
+              }
+
+          </form>
+        
          
            
           
@@ -94,21 +98,17 @@ function ToDoList(){
                {task.map((elem,index) => (
                   <div key={elem}>
                  
-                       <li>{elem}</li>
+                       <li className='todoList'>{elem}
+                           <button onClick={() => EditTask(elem)}>Edit</button>
+                           <button onClick={() => onDeleteTask(elem)}>Delete</button>
+                       </li>
                        
-
-           
-
-                       <button onClick={() => EditTask(elem)}>Edit</button>
-                       
-                       <button onClick={() => onDeleteTask(elem)}>Delete</button>
-                      
-                       </div>
+                  </div>
                ))}
               
 
            </ul>
-
+          
       </div>
   
   )
@@ -117,16 +117,12 @@ function ToDoList(){
 }
 
 function App() {
- 
-  
-
   return (
     <>
-       <h1>CRUD App</h1>
-       <ToDoList />
-       
+     <h1>CRUD App</h1>
+     <TodoTask />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
