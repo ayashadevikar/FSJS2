@@ -84,7 +84,7 @@ function TodoTask(){
                <input type="text" value={text} onChange={(e) => setText(e.target.value)}/>
            
               { 
-                editbtn? <button onClick={onAddTask}>Update</button> : <button onClick={onAddTask}>Add</button>
+                editbtn? <button className='updateBtn' onClick={onAddTask}>Update</button> : <button className='addBtn' onClick={onAddTask}>Add</button>
               }
 
           </form>
@@ -98,9 +98,11 @@ function TodoTask(){
                {task.map((elem,index) => (
                   <div key={elem}>
                  
-                       <li className='todoList'>{elem}
-                           <button onClick={() => EditTask(elem)}>Edit</button>
-                           <button onClick={() => onDeleteTask(elem)}>Delete</button>
+                       <li className='todoList'>
+                           <span className='todoText'>{elem}</span>
+                           <button className='listBtn' onClick={() => EditTask(elem)}><i class="fa-solid fa-pen-to-square"></i></button>
+                           <button className='listBtn' onClick={() => onDeleteTask(elem)}><i class="fa-solid fa-trash"></i></button>
+                           
                        </li>
                        
                   </div>

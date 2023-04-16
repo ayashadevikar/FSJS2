@@ -1,5 +1,5 @@
 import { useEffect,useState } from 'react'
-
+import './index.css'
 import './App.css'
 import Meal from './Meal.jsx'
 import Axios from 'axios'
