@@ -29,7 +29,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 50vh;
- background-color: #74ffac;
+ 
 }
 
 h1 {
@@ -93,6 +93,7 @@ ul {
    width: 250px;
     display: flex;
     align-items: center;
+    background-color: aqua;
 }
 
 .fa-pen-to-square {
