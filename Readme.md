@@ -66,7 +66,7 @@
 
 ## React Assignments
 
-[Project 1- ToDo App](https://todo-react-app-1.netlify.app/)
+[Project 1- ToDo App]()
 
 [Project 2- Rock,Paper And Scissor Game](https://game-react-app2.netlify.app/)
 
