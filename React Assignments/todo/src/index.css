@@ -45,7 +45,7 @@ h1 {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: #f27e2b;
   cursor: pointer;
   transition: border-color 0.25s;
 }
@@ -58,7 +58,7 @@ h1 {
 }
 
 .updateBtn {
-  background-color: green;
+  background-color: rgb(58, 227, 58);
   border-radius: 8px;
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
@@ -93,7 +93,7 @@ ul {
    width: 250px;
     display: flex;
     align-items: center;
-    background-color: aqua;
+    background-color: rgb(136, 242, 242);
 }
 
 .fa-pen-to-square {
@@ -110,12 +110,14 @@ ul {
    display: flex;
    flex: 1;
    font-size: 20px;
+   color: #000000;
 }
 
 .listBtn {
     border: none;
     font-size: 20px;
     margin: 0 3px; 
+    background-color: transparent;
   
   }
 
@@ -127,7 +129,7 @@ ul {
   a:hover {
     color: #747bff;
   }
-  .addBtn {
+  /* .addBtn {
     background-color: rgb(206, 131, 210);
-  }
+  } */
 }
