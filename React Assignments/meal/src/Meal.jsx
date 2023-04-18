@@ -1,28 +1,23 @@
 import React from "react"
 
-function Meal({meals}){
+function Meal({meal}){
      
       
 
    return (
 
       
-         <div>
-              
-            
-       {meals.map((meal) => (
-            <div key={meal.idMeal}>
-                  <h1>{meal.strMeal}</h1>
-                  <img src={meal.strMealThumb} alt="" />
-            </div>
-      ))}
-               </div>
+      <div className="mealData">
+            {
+            meal.map((meals) => (
+               <div key={meals.idMeal} className="mealList">
+                  <h1>{meals.strMeal}</h1>
+                  <img src={meals.strMealThumb} alt="" />
+                </div>
+                ))}   
+     </div>
           
-         
-        
-        
-      
-   )
+)
 }
 
 export default Meal

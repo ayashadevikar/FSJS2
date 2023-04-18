@@ -31,8 +31,11 @@ function App() {
   return (
      <>
        <h1>Movie App</h1>
-       <input type="text" value={text} placeholder='Enter any Movie Name' onChange={(e) => setText(e.target.value)}/>
-       <button onClick={fetechMovies}>Search</button>
+          <form className='movieForm'>
+             <input type="text" value={text} placeholder='Enter any Movie Name' onChange={(e) => setText(e.target.value)}/>
+             <button onClick={fetechMovies}>Search</button>
+          </form> 
+           
        <Movie search={search}/>
      </>
   )

@@ -16,7 +16,7 @@ function App() {
   
    const randomIndex=Math.floor(Math.random() * computerChoiceArray.length)
   const computerChoice=computerChoiceArray[randomIndex];
-  
+  setComputerChoice(computerChoiceArray);
 
       if(userChoice === "Rock" && computerChoice === "Scissor")
       {
@@ -30,6 +30,17 @@ function App() {
       else if(userChoice === "Scissor" && computerChoice === "Paper")
       {
         alert(`"You Won!! Computer Chose ${computerChoice}`);
+      }
+      else if(computerChoice === "Rock" && userChoice === "Scissor"){
+        alert(`"Computer Won!! User Chose ${userChoice}`);
+      } 
+      else if(computerChoice === "Paper" && userChoice === "Rock")
+      {
+        alert(`"Computer Won!! User Chose ${userChoice}`);
+      }
+      else if(computerChoice === "Scissor" && userChoice === "Paper")
+      {
+        alert(`"Computer Won!! User Chose ${userChoice}`);
       }
       else if(userChoice === computerChoice){
         alert(`"Game Draw!! User Chose ${userChoice} & Computer Chose ${computerChoice}`);

@@ -6,11 +6,11 @@ import Axios from 'axios'
 
 function App() {
   
-    const [meals, setMeal] = useState([]);
+    const [meal, setMeal] = useState([]);
     const [search, setSearch] = useState("");
 
-    const fetechMeals = async () => {
-        
+    const fetechMeals = async (e) => {
+      e.preventDefault();
       if(search === ""){
         alert("Enter any Meal Name")
         return;
@@ -20,8 +20,8 @@ function App() {
         const {data} = await Axios.get(`https://www.themealdb.com/api/json/v1/1/search.php?s=${search}`)
         console.log("Response", data)
 
-        const meals = data.meals
-        setMeal(meals)
+        const meal = data.meals
+        setMeal(meal)
     }
 
 
@@ -32,9 +32,12 @@ function App() {
   return (
      <>
        <h1>Meal App</h1>
-       <input type="text" value={search} placeholder='Enter any Meal Name' onChange={(e) => setSearch(e.target.value)}/>
-       <button onClick={fetechMeals}>Search</button>
-       <Meal meals={meals}/>
+           <form className='mealForm'>
+                <input type="text" value={search} placeholder='Enter any Meal Name' onChange={(e) => setSearch(e.target.value)}/>
+                <button onClick={fetechMeals}>Search</button>
+          </form>
+       
+       <Meal meal={meal}/>
      </>
   )
 }

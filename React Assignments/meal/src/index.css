@@ -43,7 +43,7 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: rgb(100, 173, 149);
   cursor: pointer;
   transition: border-color 0.25s;
 }
@@ -55,6 +55,24 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+.mealForm {
+ 
+    display: flex;
+    gap: 10px;
+ }
+
+ .mealData {
+  
+ }
+
+.mealList > h1 {
+     font-size: 30px;
+}
+
+.mealList > img {
+    width: 200px;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
@@ -63,7 +81,5 @@ button:focus-visible {
   a:hover {
     color: #747bff;
   }
-  button {
-    background-color: #f9f9f9;
-  }
+
 }
