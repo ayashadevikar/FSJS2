@@ -28,11 +28,11 @@ body {
   display: flex;
   place-items: center;
   min-width: 320px;
-  min-height: 100vh;
+  min-height: 50vh;
 }
 
 h1 {
-  font-size: 3.2em;
+  font-size: 2.2em;
   line-height: 1.1;
 }
 
@@ -43,10 +43,30 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: #f97272;
+  margin: 0 10px;
   cursor: pointer;
   transition: border-color 0.25s;
 }
+
+
+.fa-hand-back-fist{
+  color: rgb(18, 18, 20);
+  font-size: 50px;
+}
+
+.fa-hand-scissors {
+  color: rgb(255, 255, 0);
+  font-size: 50px;
+}
+
+.fa-hand{
+   color: rgb(22, 22, 116);
+   font-size: 50px;
+}
+
+
+
 button:hover {
   border-color: #646cff;
 }
@@ -63,7 +83,5 @@ button:focus-visible {
   a:hover {
     color: #747bff;
   }
-  button {
-    background-color: #f9f9f9;
-  }
+  
 }

@@ -5,24 +5,16 @@ import './App.css'
 
 function App() {
 
-  // let userChoice=""
+  let userChoice="";
 
-  const [userChoice, setUserChoice] = useState("") 
   const [computerChoiceArray, setComputerChoice] = useState(["Rock" , "Paper" , "Scissor"])
 
 
   const condition = (value) => {
-  debugger
-  const userChoice = value;
-  //  const userChoice = ["Rock", "Paper", "Scissor"]; 
+
+      userChoice = value;
   
-    // const computerChoice = (userChoice[Math.floor(Math.random() * 3)]);
-   
-  // tUserChoic  see("userChoice");
-  
-  
-  
-  const randomIndex=Math.floor(Math.random() * computerChoiceArray.length)
+   const randomIndex=Math.floor(Math.random() * computerChoiceArray.length)
   const computerChoice=computerChoiceArray[randomIndex];
   
 
@@ -40,7 +32,7 @@ function App() {
         alert(`"You Won!! Computer Chose ${computerChoice}`);
       }
       else if(userChoice === computerChoice){
-
+        alert(`"Game Draw!! User Chose ${userChoice} & Computer Chose ${computerChoice}`);
       
       }
 
@@ -52,9 +44,9 @@ function App() {
   return (
      <>
         <h1>Rock Scissor Paper Game</h1>
-        <button onClick={() => condition("Rock")}>Rock</button>
-        <button onClick={() => condition("Scissor")}>Scissor</button>
-        <button onClick={() => condition("Paper")}>Paper</button>
+        <button onClick={() => condition("Rock")}><i className="fa-solid fa-hand-back-fist"></i></button>
+        <button onClick={() => condition("Scissor")}><i className="fa-solid fa-hand-scissors"></i></button>
+        <button onClick={() => condition("Paper")}><i className="fa-solid fa-hand"></i></button>
         
       </>
   )

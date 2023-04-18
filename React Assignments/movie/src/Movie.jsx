@@ -1,12 +1,23 @@
 import React from "react"
 
-function Movie({text}){
+function Movie({search}){
    return (
 
-       <>
-          <h1>{text.Title}</h1>
-          <img src={text.Poster} alt="" />
-       </>
+      <div>
+              
+            
+      {search.map((Search) => (
+           <div key={Search.imdbID}>
+                 <h1>{Search.Title}</h1>
+                 <p>{Search.Year}</p>
+                 <img src={Search.Poster} alt="" />
+           </div>
+     ))}
+              </div>
+         
+        
+       
+       
    )
 }
 

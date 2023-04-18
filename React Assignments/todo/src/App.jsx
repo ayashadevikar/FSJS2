@@ -100,8 +100,8 @@ function TodoTask(){
                  
                        <li className='todoList'>
                            <span className='todoText'>{elem}</span>
-                           <button className='listBtn' onClick={() => EditTask(elem)}><i class="fa-solid fa-pen-to-square"></i></button>
-                           <button className='listBtn' onClick={() => onDeleteTask(elem)}><i class="fa-solid fa-trash"></i></button>
+                           <button className='listBtn' onClick={() => EditTask(elem)}><i className="fa-solid fa-pen-to-square"></i></button>
+                           <button className='listBtn' onClick={() => onDeleteTask(elem)}><i className="fa-solid fa-trash"></i></button>
                            
                        </li>
                        

@@ -6,7 +6,7 @@ import Axios from 'axios'
 
 function App() {
   
-    const [text, setText] = useState([]);
+    const [meals, setMeal] = useState([]);
     const [search, setSearch] = useState("");
 
     const fetechMeals = async () => {
@@ -20,8 +20,8 @@ function App() {
         const {data} = await Axios.get(`https://www.themealdb.com/api/json/v1/1/search.php?s=${search}`)
         console.log("Response", data)
 
-        const text = data.meals[0]
-        setText(text)
+        const meals = data.meals
+        setMeal(meals)
     }
 
 
@@ -34,7 +34,7 @@ function App() {
        <h1>Meal App</h1>
        <input type="text" value={search} placeholder='Enter any Meal Name' onChange={(e) => setSearch(e.target.value)}/>
        <button onClick={fetechMeals}>Search</button>
-       <Meal text={text}/>
+       <Meal meals={meals}/>
      </>
   )
 }

@@ -6,34 +6,34 @@ import Axios from 'axios'
 
 function App() {
   
-    const [text, setText] = useState([]);
-    const [search, setSearch] = useState("");
+    const [search, setSearch] = useState([]);
+    const [text, setText] = useState("");
 
     const fetechMovies = async () => {
         
-      if(search === ""){
+      if(text === ""){
         alert("Enter any Movie Name")
         return;
    }
 
 
-        const {data} = await Axios.get(`https://www.omdbapi.com/?s=${search}&apikey=f195b326`)
+        const {data} = await Axios.get(`https://www.omdbapi.com/?s=${text}&apikey=f195b326`)
         console.log("Response", data)
 
-        const text = data.Search[0]
-        setText(text)
+        const search = data.Search
+        setSearch(search)
     }
 
     useEffect( ()=> {
       fetch(`https://www.omdbapi.com/?s=&apikey=f195b326`)
-  }, [search])
+  }, [text])
 
   return (
      <>
        <h1>Movie App</h1>
-       <input type="text" value={search} placeholder='Enter any Movie Name' onChange={(e) => setSearch(e.target.value)}/>
+       <input type="text" value={text} placeholder='Enter any Movie Name' onChange={(e) => setText(e.target.value)}/>
        <button onClick={fetechMovies}>Search</button>
-       <Movie text={text}/>
+       <Movie search={search}/>
      </>
   )
 }
