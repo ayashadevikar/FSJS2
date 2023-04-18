@@ -68,7 +68,7 @@
 
 [Project 1- ToDo App](https://todo-react-app-1.netlify.app/)
 
-[Project 2- Rock,Paper And Scissor Game]()
+[Project 2- Rock,Paper And Scissor Game](https://game-react-app2.netlify.app/)
 
 [Project 3- Meal App](https://meal-react-app3.netlify.app/)
 
