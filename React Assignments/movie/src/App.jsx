@@ -9,8 +9,8 @@ function App() {
     const [search, setSearch] = useState([]);
     const [text, setText] = useState("");
 
-    const fetechMovies = async () => {
-        
+    const fetechMovies = async (e) => {
+        e.preventDefault();
       if(text === ""){
         alert("Enter any Movie Name")
         return;

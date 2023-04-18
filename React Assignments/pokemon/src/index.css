@@ -28,7 +28,7 @@ body {
   display: flex;
   place-items: center;
   min-width: 320px;
-  min-height: 100vh;
+  min-height: 50vh;
 }
 
 h1 {
@@ -43,7 +43,7 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: rgb(253, 155, 224);
   cursor: pointer;
   transition: border-color 0.25s;
 }
@@ -55,6 +55,19 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+.pokemonForm {
+ 
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.pokemonList > h1{
+   font-size: 20px;
+}
+
+
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
@@ -63,7 +76,5 @@ button:focus-visible {
   a:hover {
     color: #747bff;
   }
-  button {
-    background-color: #f9f9f9;
-  }
+  
 }

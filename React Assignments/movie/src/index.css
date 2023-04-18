@@ -36,10 +36,6 @@ h1 {
   line-height: 1.1;
 }
 
-.movieForm {
-  display: flex;
-  gap: 10px;
-}
 
 button {
   border-radius: 8px;
@@ -48,7 +44,7 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: rgb(182, 94, 254);
   cursor: pointer;
   transition: border-color 0.25s;
 }
@@ -60,6 +56,48 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+.movieForm {
+ 
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.movieData {
+margin-top: 20px;
+display: grid;
+grid-template-columns: 30% 30% 30% ;
+
+}
+
+
+.movieList > h1 {
+   font-size: 15px;
+   text-align: center;
+
+  
+}
+
+.movieList > p {
+  font-size: 20px;
+  text-align: center;
+
+ 
+}
+
+.movieList > img {
+   margin-top: 20px;
+   width: 200px;
+  
+}
+
+.noResult {
+font-size: 20px;
+text-align: center;
+margin-left: 30px;
+width: 200px;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
@@ -68,7 +106,5 @@ button:focus-visible {
   a:hover {
     color: #747bff;
   }
-  button {
-    background-color: #f9f9f9;
-  }
+ 
 }

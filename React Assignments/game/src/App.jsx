@@ -32,15 +32,15 @@ function App() {
         alert(`"You Won!! Computer Chose ${computerChoice}`);
       }
       else if(computerChoice === "Rock" && userChoice === "Scissor"){
-        alert(`"Computer Won!! User Chose ${userChoice}`);
+        alert(`"Computer Won!! Computer Chose ${computerChoice} & User Chose ${userChoice}`);
       } 
       else if(computerChoice === "Paper" && userChoice === "Rock")
       {
-        alert(`"Computer Won!! User Chose ${userChoice}`);
+        alert(`"Computer Won!! Computer Chose ${computerChoice} & User Chose ${userChoice}`);
       }
       else if(computerChoice === "Scissor" && userChoice === "Paper")
       {
-        alert(`"Computer Won!! User Chose ${userChoice}`);
+        alert(`"Computer Won!! Computer Chose ${computerChoice} & User Chose ${userChoice}`);
       }
       else if(userChoice === computerChoice){
         alert(`"Game Draw!! User Chose ${userChoice} & Computer Chose ${computerChoice}`);

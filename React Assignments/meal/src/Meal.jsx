@@ -8,13 +8,18 @@ function Meal({meal}){
 
       
       <div className="mealData">
-            {
-            meal.map((meals) => (
+            {meal? (
+               meal.map((meals) => (
                <div key={meals.idMeal} className="mealList">
                   <h1>{meals.strMeal}</h1>
                   <img src={meals.strMealThumb} alt="" />
                 </div>
-                ))}   
+               ))
+               ) : (
+                  <p className="noResult">No Meals Found!</p>
+               )} 
+                 
+                  
      </div>
           
 )

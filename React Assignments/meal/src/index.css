@@ -59,18 +59,35 @@ button:focus-visible {
  
     display: flex;
     gap: 10px;
+    justify-content: center;
  }
 
  .mealData {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 30% 30% 30% ;
   
  }
 
+ 
 .mealList > h1 {
-     font-size: 30px;
+     font-size: 20px;
+     text-align: center;
+  
+    
 }
 
 .mealList > img {
-    width: 200px;
+     margin-top: 20px;
+     width: 200px;
+    
+}
+
+.noResult {
+  font-size: 20px;
+  text-align: center;
+  margin-left: 30px;
+  width: 200px;
 }
 
 @media (prefers-color-scheme: light) {

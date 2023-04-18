@@ -1,34 +1,44 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { useState,useEffect } from 'react'
+import './index.css'
 import './App.css'
+import Axios from 'axios'
+import Pokemon from './Pokemon.jsx'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [text, setText] = useState([]);
+  const [search, setSearch] = useState("");
+
+  const fetechPokemons = async (e) => {
+
+   e.preventDefault();
+
+
+    if(search === ""){
+         alert("Enter any Pokemon Name")
+         return;
+    }
+
+         const {data} = await Axios.get(`https://pokeapi.co/api/v2/pokemon/${search}`)
+         console.log("Response", data);
+
+         const text = data
+         setText(text)
+         
+  }
+
+  useEffect( ()=> {
+    fetch(`https://pokeapi.co/api/v2/pokemon/`)
+}, [search])
 
   return (
-    <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </div>
+     <>
+        <h1>Pokemon App</h1>
+        <form className='pokemonForm'>
+             <input type="text" value={search} placeholder='Enter Any Pokemon Name' onChange={(e) => setSearch(e.target.value)}/>
+             <button onClick={fetechPokemons}>Search</button>
+        </form>
+        <Pokemon text={text}/>
+     </>
   )
 }
 
