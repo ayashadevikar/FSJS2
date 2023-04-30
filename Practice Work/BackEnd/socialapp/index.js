@@ -9,9 +9,9 @@ const app = express();
 const PORT = 3000
 
 // Route
-// app.get('/', (req, res)=>{
-//     res.send('Hello World')
-// })
+app.get('/', (req, res)=>{
+    res.send('Hello World')
+})
 
 // Listen
 app.listen(PORT, ()=>{
