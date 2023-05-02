@@ -19,7 +19,7 @@ app.get('/fb', (req, res)=>{
 
 app.get("/insta", (req, res)=>{
     const insta = {
-        userName: Alex,
+        userName: 'Alex',
         follow: 1,
         follower: 20,
     };
