@@ -17,6 +17,8 @@ app.get('/fb', (req, res)=>{
     res.status(200).send("Hello")
 })
 
+ // json format data 
+ 
 app.get("/insta", (req, res)=>{
     const insta = {
         userName: 'Alex',
